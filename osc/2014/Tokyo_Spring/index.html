@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！</title>
+  <script>
+    function showPDF() {
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "https://repoten-api.net/api/templates/bcd69b240e.pdf");
+      xhr.responseType = "blob";
+      xhr.setRequestHeader("Content-Type", "application/xml");
+
+      xhr.onload = function() {
+       if (this.status == 200) {
+          var blob = new Blob([xhr.response], { type: "application/pdf" });
+          var url = URL.createObjectURL(blob);
+
+          window.open(url);
+        }
+      };
+
+      xhr.send(
+        '<?xml version="1.0" encoding="UTF-8"?>' +
+        '<pages type="array">' +
+          '<page>' +
+            '<price>' + document.getElementById("price").value + '</price>' +
+          '</page>' +
+        '</pages>'
+      );
+    };
+  </script>
+</head>
+<body>
+  <h1>JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！ル</h1>
+  <p>
+    <input type="number" name="price" id="price" placeholder="金額">
+  </p>
+  <button onclick="showPDF();">印刷</button>
+</body>
+</html>
