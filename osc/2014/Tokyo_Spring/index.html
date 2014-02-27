@@ -14,8 +14,8 @@
 
       xhr.onload = function() {
        if (this.status == 200) {
-          var blob = new Blob([xhr.response], { type: "application/pdf" });
-          var url = URL.createObjectURL(blob);
+          var pdf = xhr.response;
+          var url = URL.createObjectURL(pdf);
 
           window.open(url);
         }
