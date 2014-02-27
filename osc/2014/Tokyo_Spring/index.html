@@ -1,9 +1,10 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！</title>
+  <title>領収書を作ってくれる Webアプリケーション</title>
+  <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/bootstrap-theme.min.css">
   <script>
     function showPDF() {
       var xhr = new XMLHttpRequest();
@@ -32,10 +33,14 @@
   </script>
 </head>
 <body>
-  <h1>JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！ル</h1>
-  <p>
-    <input type="number" name="price" id="price" placeholder="金額">
-  </p>
-  <button onclick="showPDF();">印刷</button>
+  <div class="container">
+    <h1>領収書を作ってくれる Webアプリケーション</h1>
+    <div class="well">
+      <p>
+        <input type="number" name="price" id="price" class="form-control input-lg" placeholder="金額を入力してください">
+      </p>
+      <button class="btn btn-primary btn-lg btn-block" onclick="showPDF();">印刷する</button>
+    </div>
+  </div>
 </body>
 </html>
