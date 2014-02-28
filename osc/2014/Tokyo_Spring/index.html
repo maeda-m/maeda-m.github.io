@@ -2,9 +2,10 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>領収書を作ってくれる Webアプリケーション</title>
+  <title>JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！</title>
   <link rel="stylesheet" href="assets/stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="assets/stylesheets/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="assets/stylesheets/application.css">
   <script>
     function showPDF() {
       var xhr = new XMLHttpRequest();
@@ -33,14 +34,30 @@
   </script>
 </head>
 <body>
+  <header>
+
+  </header>
   <div class="container">
-    <h1>領収書を作ってくれる Webアプリケーション</h1>
+    <h1>JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！</h1>
+
     <div class="well">
+      <h2>領収書印刷</h2>
+
       <p>
         <input type="number" name="price" id="price" class="form-control input-lg" placeholder="金額を入力してください">
       </p>
       <button class="btn btn-primary btn-lg btn-block" onclick="showPDF();">印刷する</button>
     </div>
+
+    <div class="callout callout-info">
+      <p>ソースコードは<a href="https://github.com/maeda-m/maeda-m.github.io/blob/master/osc/2014/Tokyo_Spring/index.html">こちら!</a><p>
+    </div>
   </div>
+  <footer>
+    <hr class="featurette-divider">
+    <p>
+      Powered by <a href="http://repoten-api.net/welcome"><img src="http://repoten-api.net/assets/repoten.png" /></a>
+    </p>
+  </footer>
 </body>
 </html>

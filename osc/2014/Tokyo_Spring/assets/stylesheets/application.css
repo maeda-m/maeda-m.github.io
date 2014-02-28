@@ -1,0 +1,98 @@
+footer {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  color: #777;
+  text-align: center;
+}
+
+.label-on-label {
+  margin-right: 10px !important;
+  margin-bottom: 5px !important;
+}
+
+.col-x-of-1 {
+  float: left;
+  position: relative;
+  min-height: 1px;
+  padding-top: 5px;
+  padding-right: 15px;
+}
+
+.col-x-element {
+  padding-left: 0px !important;
+}
+
+.form-group {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+}
+
+.control-label {
+  margin-left: -15px !important;
+  margin-bottom: 5px !important;
+}
+
+.page-padding {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+.dummy-checkbox {
+  width: 14px;
+}
+
+.callout {
+  margin: 20px 0;
+  padding: 20px;
+  border-left: 3px solid #eee;
+}
+
+.callout h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.callout-info {
+  background-color: #f4f8fa;
+  border-color: #bce8f1;
+}
+
+.callout-info h4 {
+  color: #3a87ad;
+}
+
+.callout-warning {
+  background-color: #faf8f0;
+  border-color: #faebcc;
+}
+
+.callout-warning h4 {
+  color: #c09853;
+}
+
+.callout-danger {
+  background-color: #fdf7f7;
+  border-color: #eed3d7;
+}
+
+.callout-danger h4 {
+  color: #b94a48;
+}
+
+.callout-detail {
+  margin-top: 10px;
+}
+
+#ajax_indicator strong {
+  padding-left: 10px;
+}
+
+.empty-data-message {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.div-action {
+  margin-bottom: 10px;
+}
