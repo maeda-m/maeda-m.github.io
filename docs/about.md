@@ -27,3 +27,34 @@ Minoru Maeda
   * [講演『「プロジェクト管理」を超えた Redmine 活用の道のりとこれから』](https://www.slideshare.net/minoru_maeda/redmine-49256040)
 * 2014-02-28: [オープンソースカンファレンス2014 Tokyo/Spring](https://www.ospn.jp/osc2014-spring/modules/article/a4.html)
   * [LT「JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！」](https://www.slideshare.net/minoru_maeda/java-scriptrepoten-apipdf)
+
+## Others
+
+### 免責事項
+
+記事の内容は個人的な意見・認識で、正確性・適切性を保証しません。また記事の内容を利用して直接および間接的に生じた問題・損害に対して一切の責任を負いません。
+
+### 広告
+
+運営のため、アフィリエイトリンクを利用しています。また該当リンクの商品についての問い合わせや問題については対応できません。ご了承ください。
+なおAmazonのアソシエイトとして、{{site.title}}は適格販売により収入を得ています。
+
+### お問い合わせ
+
+[こちらのフォーム（外部サイト：GitHub）](https://github.com/maeda-m/maeda-m.github.io/issues/new) をご利用ください。
+
+### 各種参照リンク
+
+* GitHub および GitHub Pages
+  * [GitHub 利用規定 - 2. コンテンツの制限](https://docs.github.com/ja/github/site-policy/github-acceptable-use-policies#2-content-restrictions)
+  * [GitHub 利用規定 - 9. GitHubでの広告](https://docs.github.com/ja/github/site-policy/github-acceptable-use-policies#9-advertising-on-github)
+  * [About GitHub Pages - Prohibited uses](https://docs.github.com/ja/pages/getting-started-with-github-pages/about-github-pages#prohibited-uses)
+* アフィリエイトリンク
+  * [楽天アフィリエイトガイドライン - 禁止事項](https://affiliate.rakuten.co.jp/guides/help/)
+  * [Amazonアソシエイト・プログラム運営規約 - 5. 乙がアソシエイトであることの表示](https://affiliate.amazon.co.jp/help/operating/agreement)
+* 広告リンク [^1]
+  * [Google AdSense ヘルプ - 広告掲載のガイドライン](https://support.google.com/adsense/answer/1346295?hl=ja)
+* アクセス解析 [^1]
+  * [Google アナリティクス ヘルプ - プライバシーの開示に関するポリシー](https://support.google.com/analytics/answer/7318509)
+
+[^1]:2022-03-14 時点では未設置。
