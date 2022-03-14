@@ -23,10 +23,10 @@ $ docker-compose exec ruby bash
 ### 2. Create a new file
 
 ```
-# touch /jekyll/pages/_posts/$(date '+%Y-%m-%d')-awesome-article-title.md
+# touch /jekyll/docs/_posts/$(date '+%Y-%m-%d')-awesome-article-title.md
 ```
 
-`e.g. pages/_posts/2022-03-14-awesome-article-title.md`
+`e.g. docs/_posts/2022-03-14-awesome-article-title.md`
 
 ### 3. Add content
 
@@ -48,7 +48,7 @@ http://localhost:4000
 ### 5. Publish a post
 
 ```
-$ git add pages/_posts/yyyy-mm-dd-awesome-article-title.md
+$ git add docs/_posts/yyyy-mm-dd-awesome-article-title.md
 $ git commit
 $ git push -u origin main
 ```

@@ -1,7 +1,7 @@
 ARG RUBY_VERSION
 FROM ruby:${RUBY_VERSION}-buster
 
-WORKDIR /jekyll/pages
+WORKDIR /jekyll/docs
 
 COPY entrypoint.sh /
 RUN chmod +x /entrypoint.sh

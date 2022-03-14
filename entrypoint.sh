@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /jekyll/pages
+cd /jekyll/docs
 bundle install
 
 exec "$@"
