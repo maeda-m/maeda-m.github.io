@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  ruby:
+    restart: "no"
+    tty: true
+    volumes:
+      - .:/jekyll
+      - gems:/usr/local/bundle
+      - histfile:/histfile
+    environment:
+      - TZ=Asia/Tokyo
+      - HISTFILE=/histfile/.bash_history
+    ports:
+      - "4000:4000"
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        RUBY_VERSION: "2.7.5"
+volumes:
+  gems:
+  histfile:

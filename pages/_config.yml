@@ -1,0 +1,33 @@
+author: ":copyright: 2022 maeda-m"
+title: お日記させていただいてもよろしいでしょうか。
+
+baseurl: ""
+url: https://blog.maeda-m.com
+
+theme: minima
+minima:
+  date_format: "%Y-%m-%d %H:%M"
+
+markdown: CommonMarkGhPages
+commonmark:
+  options:
+    - UNSAFE
+    - SMART
+    - FOOTNOTES
+  extensions:
+    - strikethrough
+    - autolink
+    - table
+    - tagfilter
+
+relative_links:
+  enabled: true
+  collections: false
+
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-avatar
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
