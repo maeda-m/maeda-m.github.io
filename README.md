@@ -7,7 +7,7 @@ Source for GitHub Pages site using Jekyll.
 ### Overview
 
 1. Start Jekyll
-2. Create a new file
+2. Create new branche and file
 3. Add content
 4. Preview a post
 5. Publish a post
@@ -20,9 +20,10 @@ $ docker-compose up -d
 $ docker-compose exec ruby bash
 ```
 
-### 2. Create a new file
+### 2. Create new branche and file
 
 ```
+# git checkout -b new-branche
 # touch /jekyll/docs/_posts/$(date '+%Y-%m-%d')-awesome-article-title.md
 ```
 
@@ -47,10 +48,22 @@ http://localhost:4000
 
 ### 5. Publish a post
 
+- [Create Commit](https://docs.github.com/ja/pull-requests/committing-changes-to-your-project/creating-and-editing-commits)
 ```
-$ git add docs/_posts/yyyy-mm-dd-awesome-article-title.md
-$ git commit
-$ git push -u origin main
+# git add docs/_posts/yyyy-mm-dd-awesome-article-title.md
+# git commit
+```
+- [Creating pull request](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests)
+```
+# git push -u origin new-branche
+```
+- Check items before publication
+- [Merge changes from pull request](https://docs.github.com/ja/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request)
+  - `NOTE: After pull request is merged, the branch is automatically deleted.`
+- Sync the base branch
+```
+# git switch main
+# git pull origin main
 ```
 
 ### 6. Stop Jekyll
