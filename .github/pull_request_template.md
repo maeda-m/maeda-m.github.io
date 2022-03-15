@@ -63,7 +63,7 @@
 </details>
 
 <details>
- <summary>法律に抵触する内容や優良誤認や誇張した表現をしていないこと</summary>
+ <summary>法律に抵触する内容、優良誤認や誇張した表現をしていないこと</summary>
 
 * [楽天アフィリエイトガイドライン - 気を付けたい関連法律](https://affiliate.rakuten.co.jp/know-how/headsup/)
 
