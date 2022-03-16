@@ -41,7 +41,7 @@ Minoru Maeda
 
 ### お問い合わせ
 
-[こちらのフォーム（外部サイト：GitHub）](https://github.com/maeda-m/maeda-m.github.io/issues/new) をご利用ください。
+[こちらのフォーム（外部サイト：GitHub）](https://github.com/maeda-m/maeda-m.github.io/issues/new?assignees=maeda-m&labels=contact&template=contact.md&title=) かページ下部のコメント欄をご利用ください。どちらも [GitHubアカウントの取得](https://docs.github.com/ja/get-started) が必要です。
 
 ### 各種参照リンク
 
