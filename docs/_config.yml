@@ -26,6 +26,9 @@ relative_links:
   enabled: true
   collections: false
 
+disqus:
+  shortname: "Disqus replaced by utterances"
+
 plugins:
   - jemoji
   - jekyll-feed
