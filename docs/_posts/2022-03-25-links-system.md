@@ -23,6 +23,7 @@ date:  2022-03-25 14:30:00 +0900
 * [万葉のRails新人研修のコードレビューコメントを分析してみました - Speaker Deck](https://speakerdeck.com/nay3/mo-xie-falserailsxin-ren-yan-xiu-falsekodorebiyukomentowofen-xi-sitemimasita?slide=153)
 * [Misocaのプルリクエストの運用について - 弥生開発者ブログ](https://tech-blog.yayoi-kk.co.jp/entry/2015/09/11/151039)
 * [うっかりミスを防ぐPull-Requestテンプレート - M&Aクラウド開発者ブログ](https://tech.macloud.jp/entry/2020/06/29/103604)
+* [【動画付き・初心者向け】コメントにはWHYを書こう 〜不要なコメントと必要なコメントの違いについて〜 - Qiita](https://qiita.com/jnchito/items/f0d90af4ed44b7484103)
 
 ## 継続的インテグレーション
 
