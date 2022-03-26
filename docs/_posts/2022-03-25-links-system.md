@@ -26,19 +26,23 @@ date:  2022-03-25 14:30:00 +0900
 
 ## 継続的インテグレーション
 
+* [「自動テストとテスト駆動開発、その全体像」を執筆しました（Software Design 2022年3月号） - t-wadaのブログ](https://t-wada.hatenablog.jp/entry/automated-test-and-tdd-sd202203)
+  * [テストとは、エラーをみつけるつもりでプログラムを実行する過程である | テスト駆動開発の過去・現在・未来 / History of TDD - XPJUG 2018 Keynote - Speaker Deck](https://speakerdeck.com/twada/history-of-tdd-xpjug-2018-keynote?slide=51)
+  * [テストは品質を上げない | テスト駆動開発の過去・現在・未来 / History of TDD - XPJUG 2018 Keynote - Speaker Deck](https://speakerdeck.com/twada/history-of-tdd-xpjug-2018-keynote?slide=118)
+  * [組織にテストを書く文化を根付かせる戦略と戦術（2020秋版） / Strategy and Tactics of Building Automated Testing Culture into Organization 2020 Autumn Edition - Speaker Deck](https://speakerdeck.com/twada/strategy-and-tactics-of-building-automated-testing-culture-into-organization-2020-autumn-edition)
+* [テストのピラミッドを開発者と一緒に眺めてみよう！ | DevelopersIO](https://dev.classmethod.jp/articles/testing_pyramid/)
+
+### Testing/Checking
+
 * [ユースケーステストとシナリオテストの違いってなぁに - Togetter](https://togetter.com/li/987343)
 * [第97回：　ユースケーステスト（前編）｜Kouichi Akiyama｜note](https://note.com/akiyama924/n/nd82fea655156)
 * [ユースケースとシナリオテストの違い、ユースケースの記述方法を解説| Qbook](https://www.qbook.jp/column/20190605_722.html)
 * [「シナリオテスト」とは一体、何なのか - その5 - ソフトウェアの品質を学びまくる2.0](https://www.kzsuzuki.com/entry/2020/09/26/131557)
-* [テストのピラミッドを開発者と一緒に眺めてみよう！ | DevelopersIO](https://dev.classmethod.jp/articles/testing_pyramid/)
-* [テストを再設計して開発効率と実効速度を向上しました。 - M&Aクラウド開発者ブログ](https://tech.macloud.jp/entry/2020/06/08/174707)
+* [「シナリオテスト」とは一体、何なのか - その1 - ソフトウェアの品質を学びまくる2.0](https://www.kzsuzuki.com/entry/2012/10/15/005800)
+* [テストコードを書き始める前に考えるべきテストの話（2021年版） #scrumosaka / scrum_fest_osaka_2021 - Speaker Deck](https://speakerdeck.com/nihonbuson/scrum-fest-osaka-2021)
 * [Playwright の無駄づかい](https://zenn.dev/imaginary/articles/6ed45b2352896f)
 * [いよいよPuppeteerを使う理由がなくなってきた。これからはPlaywrightの時代だ](https://zenn.dev/yusukeiwaki/articles/db1cd8d7aa87ed)
-* [「シナリオテスト」とは一体、何なのか - その1 - ソフトウェアの品質を学びまくる2.0](https://www.kzsuzuki.com/entry/2012/10/15/005800)
-* [優れたテスト容易性を実現するためのポイント  | PrAhaENGINEERLAB](https://www.praha-inc.com/lab/posts/testability)
-* [テストコードを書き始める前に考えるべきテストの話（2021年版） #scrumosaka / scrum_fest_osaka_2021 - Speaker Deck](https://speakerdeck.com/nihonbuson/scrum-fest-osaka-2021)
-* [組織にテストを書く文化を根付かせる戦略と戦術（2020秋版） / Strategy and Tactics of Building Automated Testing Culture into Organization 2020 Autumn Edition - Speaker Deck](https://speakerdeck.com/twada/strategy-and-tactics-of-building-automated-testing-culture-into-organization-2020-autumn-edition)
-* [BDDについて自分なりにまとめてみた | UKSTUDIO BLOG](https://ukstudio.jp/2011/07/02/bdd/)
-* [SWIFTという観点で良いテストが書けているか評価する | mah365](https://blog.mah-lab.com/2014/09/06/swift-perspective/)
 * [テスト初心者が知っておくべきブラックボックステストの種類と概要 - Qiita](https://qiita.com/tatane616/items/1694ed4f88dc9d3b1eda)
 * [テスト技法 ブラックボックステストの概要と設計手法について](https://zenn.dev/its532/articles/d5e331571cacd3)
+* [優れたテスト容易性を実現するためのポイント  | PrAhaENGINEERLAB](https://www.praha-inc.com/lab/posts/testability)
+* [SWIFTという観点で良いテストが書けているか評価する | mah365](https://blog.mah-lab.com/2014/09/06/swift-perspective/)
