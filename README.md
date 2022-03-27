@@ -1,4 +1,4 @@
-# blog.maeda-m.com
+# www.maeda-m.com
 
 Source for GitHub Pages site using Jekyll.
 
