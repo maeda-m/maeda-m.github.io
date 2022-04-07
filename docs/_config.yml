@@ -26,6 +26,8 @@ relative_links:
   enabled: true
   collections: false
 
+google_analytics: G-4QWBEN32P7
+
 disqus:
   shortname: "Disqus replaced by utterances"
 

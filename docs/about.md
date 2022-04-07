@@ -34,14 +34,30 @@ Minoru Maeda
 
 記事の内容は個人的な意見・認識で、正確性・適切性を保証しません。また記事の内容を利用して直接および間接的に生じた問題・損害に対して一切の責任を負いません。
 
-### 広告
+### お問い合わせ
+
+[こちらのフォーム（外部サイト：GitHub）](https://github.com/maeda-m/maeda-m.github.io/issues/new?assignees=maeda-m&labels=contact&template=contact.md&title=) かページ下部のコメント欄をご利用ください。どちらも [GitHubアカウントの取得](https://docs.github.com/ja/get-started) が必要です。
+
+### アフィリエイトリンク
 
 運営のため、アフィリエイトリンクを利用しています。また該当リンクの商品についての問い合わせや問題については対応できません。ご了承ください。
 なおAmazonのアソシエイトとして、{{site.title}}は適格販売により収入を得ています。
 
-### お問い合わせ
+### Google アドセンスや他広告配信ネットワークについて
 
-[こちらのフォーム（外部サイト：GitHub）](https://github.com/maeda-m/maeda-m.github.io/issues/new?assignees=maeda-m&labels=contact&template=contact.md&title=) かページ下部のコメント欄をご利用ください。どちらも [GitHubアカウントの取得](https://docs.github.com/ja/get-started) が必要です。
+本サイトは Google アドセンスなどの広告配信ネットワークを使用しています。Google などの第三者配信事業者や広告配信ネットワークは広告配信に Cookie を使用し、あなたが本サイトや過去に他ウェブサイトにアクセスした際の情報に基づいて広告を配信することがあります。
+
+本サイトで配信された広告は前述の Cookie を使用し、あなたにとって適切な広告を表示しています。
+
+あなたは [Google 広告設定](https://adssettings.google.com/authenticated) で広告のカスタマイズをオフにすることができます。また [www.aboutads.info](http://www.aboutads.info/choices/) で広告に使われる第三者配信事業者の Cookie を無効にできます。
+
+なお Google による広告 Cookie の利用方法については [広告 – ポリシーと規約 – Google](https://policies.google.com/technologies/ads) をご覧ください。
+
+### Google アナリティクスによるサイト分析について
+
+本サイトは Google アナリティクスを使用しています。Google アナリティクスでは Cookie を使用し、本サイトでのユーザー インタラクションを分析しています。あなたは、Cookie を無効にしたり Cookie を削除したりすることができます。詳細は [Google による Cookie の利用方法 – ポリシーと規約 – Google](https://policies.google.com/technologies/cookies) をご覧ください。
+
+なお Google のサービスが収集、処理したデータの扱いについては  [Google のサービスを使用するサイトやアプリから収集した情報の Google による使用 – ポリシーと規約 – Google](https://policies.google.com/technologies/partner-sites) をご覧ください。
 
 ### 各種参照リンク
 
@@ -52,9 +68,7 @@ Minoru Maeda
 * アフィリエイトリンク
   * [楽天アフィリエイトガイドライン - 禁止事項](https://affiliate.rakuten.co.jp/guides/help/)
   * [Amazonアソシエイト・プログラム運営規約 - 5. 乙がアソシエイトであることの表示](https://affiliate.amazon.co.jp/help/operating/agreement)
-* 広告リンク [^1]
+* 広告リンク
   * [Google AdSense ヘルプ - 広告掲載のガイドライン](https://support.google.com/adsense/answer/1346295?hl=ja)
-* アクセス解析 [^1]
+* アクセス解析
   * [Google アナリティクス ヘルプ - プライバシーの開示に関するポリシー](https://support.google.com/analytics/answer/7318509)
-
-[^1]:2022-03-14 時点では未設置。
