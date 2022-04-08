@@ -1,5 +1,5 @@
-author: ":copyright: 2022 maeda-m"
 title: お日記させていただいてもよろしいでしょうか。
+description: ":copyright: 2022 maeda-m"
 
 baseurl: ""
 url: https://www.maeda-m.com
@@ -26,8 +26,8 @@ relative_links:
   enabled: true
   collections: false
 
-google_analytics: G-4QWBEN32P7
-
+header_pages:
+  - about.md
 disqus:
   shortname: "Disqus replaced by utterances"
 
