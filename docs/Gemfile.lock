@@ -1,6 +1,6 @@
 GIT
-  remote: https://github.com/maeda-m/minima.git
-  revision: 69664442e5a45f631d5bccaba6d7978a91ce22c8
+  remote: https://github.com/jekyll/minima.git
+  revision: 41b97699af658128fa9983e5312ca5516641f335
   specs:
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
@@ -293,6 +293,7 @@ DEPENDENCIES
   jekyll-commonmark-ghpages
   jekyll-feed (~> 0.6)
   jekyll-relative-links
+  jekyll-remote-theme
   jekyll-seo-tag
   kramdown-parser-gfm
   minima!

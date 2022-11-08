@@ -6,7 +6,7 @@ url: https://www.maeda-m.com
 
 timezone: Asia/Tokyo
 
-theme: minima
+remote_theme: jekyll/minima
 minima:
   date_format: "%Y-%m-%d %H:%M"
 
@@ -38,3 +38,4 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-relative-links
+  - jekyll-remote-theme

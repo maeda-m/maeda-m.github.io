@@ -12,7 +12,7 @@ source "https://rubygems.org"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # NOTE: Switch when version 3.0.0 is released.
-gem "minima", github: "maeda-m/minima"
+gem "minima", github: "jekyll/minima"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -25,6 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag"
   gem "jekyll-commonmark-ghpages"
   gem "jekyll-relative-links"
+  gem "jekyll-remote-theme"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
