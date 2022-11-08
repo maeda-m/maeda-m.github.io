@@ -13,6 +13,7 @@ Minoru Maeda
 * [GitHub](https://github.com/maeda-m)
 * [SlideShare](https://www.slideshare.net/minoru_maeda)
 * [RubyGems](https://rubygems.org/profiles/maeda-m)
+* [Node Packages](https://www.npmjs.com/~maeda-m)
 * [Bookmeter](https://bookmeter.com/users/1276435)
 
 ## Slides
@@ -45,17 +46,17 @@ Minoru Maeda
 
 ### Google アドセンスや他広告配信ネットワークについて
 
-本サイトは Google アドセンスなどの広告配信ネットワークを使用しています。Google などの第三者配信事業者や広告配信ネットワークは広告配信に Cookie を使用し、あなたが本サイトや過去に他ウェブサイトにアクセスした際の情報に基づいて広告を配信することがあります。
+本サイトは Google アドセンスなどの広告配信ネットワークを使用しています。Google などの第三者配信事業者や広告配信ネットワークは広告配信に Cookie を使用し、あなたが本サイトや過去に他 Web サイトにアクセスした際の情報に基づいて広告を配信することがあります。
 
 本サイトで配信された広告は前述の Cookie を使用し、あなたにとって適切な広告を表示しています。
 
-あなたは [Google 広告設定](https://adssettings.google.com/authenticated) で広告のカスタマイズをオフにすることができます。また [www.aboutads.info](http://www.aboutads.info/choices/) で広告に使われる第三者配信事業者の Cookie を無効にできます。
+あなたは [Google 広告設定](https://adssettings.google.com/authenticated) で広告のカスタマイズをオフにできます。また [www.aboutads.info](http://www.aboutads.info/choices/) で広告に使われる第三者配信事業者の Cookie を無効にできます。
 
 なお Google による広告 Cookie の利用方法については [広告 – ポリシーと規約 – Google](https://policies.google.com/technologies/ads) をご覧ください。
 
 ### Google アナリティクスによるサイト分析について
 
-本サイトは Google アナリティクスを使用しています。Google アナリティクスでは Cookie を使用し、本サイトでのユーザー インタラクションを分析しています。あなたは、Cookie を無効にしたり Cookie を削除したりすることができます。詳細は [Google による Cookie の利用方法 – ポリシーと規約 – Google](https://policies.google.com/technologies/cookies) をご覧ください。
+本サイトは Google アナリティクスを使用しています。Google アナリティクスでは Cookie を使用し、本サイトでのユーザー インタラクションを分析しています。あなたは、Cookie を無効にしたり Cookie を削除できます。詳細は [Google による Cookie の利用方法 – ポリシーと規約 – Google](https://policies.google.com/technologies/cookies) をご覧ください。
 
 なお Google のサービスが収集、処理したデータの扱いについては  [Google のサービスを使用するサイトやアプリから収集した情報の Google による使用 – ポリシーと規約 – Google](https://policies.google.com/technologies/partner-sites) をご覧ください。
 
