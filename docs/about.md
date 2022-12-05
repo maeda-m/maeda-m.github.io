@@ -24,7 +24,7 @@ Minoru Maeda
   * LT「振り返りと、いま直面する課題」(No archive)
 * 2015-10-02: [第2回Redmineセミナー 〜利用事例紹介とプラグイン入門〜](https://itradar.doorkeeper.jp/events/30283)
   * [講演「Redmineプラグイン 導入・開発入門」](https://www.slideshare.net/minoru_maeda/redmine-53528222)
-* 2015-06-10: [第2回Redmineセミナー 〜プロジェクト管理ツール「Redmine」徹底活用〜](https://itradar.doorkeeper.jp/events/25799)
+* 2015-06-10: [第1回Redmineセミナー 〜プロジェクト管理ツール「Redmine」徹底活用〜](https://itradar.doorkeeper.jp/events/25799)
   * [講演『「プロジェクト管理」を超えた Redmine 活用の道のりとこれから』](https://www.slideshare.net/minoru_maeda/redmine-49256040)
 * 2014-02-28: [オープンソースカンファレンス2014 Tokyo/Spring](https://www.ospn.jp/osc2014-spring/modules/article/a4.html)
   * [LT「JavaScriptとREPOTEN-APIでかんたんPDF出力アプリを作ってみた！」](https://www.slideshare.net/minoru_maeda/java-scriptrepoten-apipdf)
