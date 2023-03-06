@@ -10,6 +10,14 @@
 
   gtag('config', 'G-4QWBEN32P7');
 </script>
+<!-- Mermaid -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.js"></script>
+<!-- See: https://github.com/mermaid-js/mermaid/blob/v9.4.0/packages/mermaid/src/docs/config/usage.md -->
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    mermaid.initialize({ startOnLoad: true })
+  })
+</script>
 
 <style>
 p > img {
@@ -22,5 +30,9 @@ details {
 
 details[open] {
   margin-bottom: unset;
+}
+
+pre.mermaid {
+  background-color: #fdfdfd;
 }
 </style>
