@@ -1,0 +1,29 @@
+{
+  "name": "maeda-m.github.io",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Source for GitHub Pages site using Jekyll.",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maeda-m/maeda-m.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maeda-m/maeda-m.github.io/issues"
+  },
+  "homepage": "https://github.com/maeda-m/maeda-m.github.io#readme",
+  "dependencies": {
+    "@secretlint/secretlint-rule-preset-recommend": "^6.2.3",
+    "secretlint": "^6.2.3",
+    "textlint": "^13.3.1",
+    "textlint-rule-preset-bengo4": "^2.2.1",
+    "textlint-rule-preset-ja-technical-writing": "^7.0.0",
+    "textlint-rule-preset-jtf-style": "^2.3.13",
+    "textlint-rule-preset-smarthr": "^1.22.0"
+  }
+}
