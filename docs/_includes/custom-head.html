@@ -4,11 +4,13 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QWBEN32P7"></script>
 <script>
+if (location.hostname != 'localhost') {
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'G-4QWBEN32P7');
+}
 </script>
 <!-- Mermaid -->
 <script src="https://cdn.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.js"></script>
@@ -33,10 +35,18 @@ details[open] {
 }
 
 pre.mermaid {
-  background-color: #fdfdfd;
+  background-color: #e8e8e8;
 }
 
 .page-break {
   page-break-after: always;
+}
+
+blockquote p {
+  font-size: .85rem;
+}
+
+.wrapper {
+  max-width: 1280px;
 }
 </style>
