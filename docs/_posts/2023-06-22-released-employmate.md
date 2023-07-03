@@ -67,8 +67,79 @@ date:  2023-06-22 15:00:00 +0900
 
 ![【図】雇用保険の基本手当受給資格決定までの最短手順](https://www.maeda-m.com/assets/images/20230311-carrier-reboot-figure-tb.svg)
 
-なお、ソースコードは https://github.com/maeda-m/employmate で公開していますので、不具合報告や開発にご興味ある方がいらっしゃれば issue などでご連絡ください。
+## 開発
 
+ソースコードは https://github.com/maeda-m/employmate で公開しています。不具合報告はもちろん、開発にご興味ある方は issue などでご連絡ください。
+
+以下は、開発にご興味ある方に向けて、Webサービス「雇用保険給付の相棒（Employmate）」（以下、本サービスという）の技術的な内容を記載します。
+
+### システム構成
+
+本サービスは、ふつうの Ruby on Rails アプリケーションで、サーバーサイドレンダリングなHTMLと反応性が必要なところは [Hotwire（HTML-over-the-wire）](https://hotwired.dev/) の [Stimulus](https://stimulus.hotwired.dev/) で実現しています。そのため、フロントエンドのトランスコンパイルとバンドラーを使用していませんが、必要なライブラリは [importmap-rails](https://github.com/rails/importmap-rails/) 経由の [importmap](https://developer.mozilla.org/ja/docs/Web/HTML/Element/script/type/importmap) によって利用しています。
+
+### アピールポイント
+
+本サービスを、ふつうの Ruby on Rails アプリケーションと言ってしまうと味気ないので次の見出しで深掘りします。
+
+1. HTML & CSS
+2. レイヤーリング
+3. 自動テスト
+
+#### 1. HTML & CSS
+
+本サービスは、最小限の文書構造のハイパーテキストになるようマークアップしています。言い換えると、見た目の装飾のために文書構造を複雑にしておらず、メンテナンスを容易にしています。
+副次的効果は、自然にセマンティックな HTML になるため、利用しやすさ（スクリーンリーダーやキーボード操作）もよくなる点があります。
+
+実現方法としては、マークアップされたタグの意味をもとに CSS が適用される [Pico.css - Minimal CSS Framework for semantic HTML](https://picocss.com/) を使用しています。
+またボタンなどの部品は [ViewComponent](https://viewcomponent.org/) で再利用可能なカプセル化されたものとして管理しています。
+
+#### 2. レイヤーリング
+
+本サービスは、モデルに対応する Active Record が参照するパターンとしての [Active Record](https://bliki-ja.github.io/pofeaa/ActiveRecord/) を遵守します。
+
+Patterns of Enterprise Application Architecture（以下、PoEAA という）における [レイヤーリング](https://www.oreilly.com/library/view/patterns-of-enterprise/0321127420/ch01.xhtml) として、プレゼンテーション、ドメイン、データソースという 3 つの主要な層からなるアーキテクチャは、上位層は下位層が定義するさまざまなサービスを利用しますが、下位層は上位層のことを知りません（ドメインとデータソースは、決してプレゼンテーションに依存しない）。
+
+Ruby on Rails は [MVC](https://bliki-ja.github.io/pofeaa/ModelViewController/) アーキテクチャスタイルに沿った Web アプリケーションフレームワークで、各レイヤーに対応させると下表のようになります。
+
+> ▼ 表. 3 つの主要レイヤーにおける MVC アーキテクチャスタイルの位置づけ
+
+| レイヤー           | MVC アーキテクチャスタイル |
+| ------------------ | -------------------------- |
+| プレゼンテーション | ビューとコントローラ       |
+| ドメイン           | モデル                     |
+| データソース       | モデル                     |
+
+Active Record は複雑（[complicated](https://scrapbox.io/kawasima/Complex%E3%81%A8Complicated)）で変化しやすいドメインロジックをドメインモデルを使って問題領域の語彙（primarily around the nouns in the domain）で Easy になるように整理した際、データベースと密接に結合した場合に役に立つパターンで、目的が複数にならないように Rich ではない Simple なドメインモデルが前提であるため、具体的な判断基準は次のとおりです。
+
+- トランザクションスクリプトの置き場所として [サービスレイヤー](https://bliki-ja.github.io/pofeaa/ServiceLayer/) や [フォームクラス（テーブルを持たない Plain Old Ruby Object）](https://techracho.bpsinc.jp/hachi8833/2021_01_07/14738) を作りたくなったら、そもそもデータモデルとしてイベント系のエンティティ抽出ができていないのでは？と疑う
+  - 言い換えると CRUD なコードをシンプルに書ける [REST](https://meetup-jp.toast.com/931) アーキテクチャスタイル（リソース自体が URL に表現され、リソースの行為が HTTP メソッドで表現できる）に対応した Ruby on Rails の機能を活用していること
+- ビューで表現のため（単に親切にする表現などであること）にメソッドが必要なら [ViewComponent](https://viewcomponent.org/) や https://github.com/amatsuda/active_decorator を利用するが、業務に存在する表現はモデルに寄せたほうがいいため、HTML のビューと HTTP 以外（CLI の実行結果を表示するなど）のビューで共通して使うものはモデルに実装する
+  - 言い換えるとモデルは上位層となるプレゼンテーション層にある HTML の詳細としてタグや構造を知らないこと
+
+また Ruby on Rails の機能としてモデルに組み込まれているパターンがあるため、それらも活用します。
+
+> ▼ 表.  Ruby on Rails のモデルに組み込まれている PoEAA のパターン
+
+| PoEAA のパターン名| Ruby on Rails 上の実装|
+| ----------------- | --------------------- |
+| [Table Data Gateway](https://bliki-ja.github.io/pofeaa/TableDataGateway/)<br>[Row Data Gateway](https://bliki-ja.github.io/pofeaa/RowDataGateway/)                     | [core.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/core.rb)<br/>[persistence.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/persistence.rb)<br/>[relation/finder_methods.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/relation/finder_methods.rb)<br>[relation/query_methods.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/relation/query_methods.rb)<br>[relation/spawn_methods.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/relation/spawn_methods.rb)<br>[relation/calculations.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/relation/calculations.rb) |
+| [Active Record](https://bliki-ja.github.io/pofeaa/ActiveRecord/) （ [ドメインモデル](https://bliki-ja.github.io/pofeaa/DomainModel/) ）| [validations/\*.rb](https://github.com/rails/rails/tree/7-0-stable/activerecord/lib/active_record/validations)<br>[callbacks.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/callbacks.rb)<br>[scoping/named.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/scoping/named.rb)<br>[enum.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/enum.rb) |
+| [Foreign Key Mapping](https://bliki-ja.github.io/pofeaa/ForeignKeyMapping/)<br>[Association Table Mapping](https://bliki-ja.github.io/pofeaa/AssociationTableMapping/) | [associations.rb](https://github.com/rails/rails/blob/7-0-stable/activerecord/lib/active_record/associations.rb) |
+
+#### 3. 自動テスト
+
+本サービスは、E2Eテストと単体テストを実施しています。
+
+E2Eテストは [Turnip - Gherkin extension for RSpec](https://github.com/jnicklas/turnip) で要求レベルのテストシナリオを日本語で記述し、 [Playwright](https://playwright.dev/) を [Playwright driver for Capybara](https://github.com/YusukeIwaki/capybara-playwright-driver) 経由で操作してテストしています。
+
+こういった要求レベルのテストは高価で、遅く、そして脆いと知られていますが、
+本サービスにおいては、最小限の文書構造のハイパーテキストになるようマークアップした恩恵で高レベルのテストがしやすく、修正も容易になっています。
+
+### おわりに
+
+以上の技術的な内容は、学び直しを目的に入門した [FJORD BOOT CAMP（フィヨルドブートキャンプ）](https://bootcamp.fjord.jp/) の学習がきっかけ（メンターの方とのレビューによるコミュニケーションなども含む）で得たものです。
+
+みなさんに感謝申し上げます。
 Let's Enjoy Programming 🙌
 
 ---
